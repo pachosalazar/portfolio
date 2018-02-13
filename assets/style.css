@@ -71,6 +71,7 @@ h2, h3 {
 nav {
     float: right;
     margin-top: 25px;
+    margin-right: 40px;
 }
 
 nav a {
