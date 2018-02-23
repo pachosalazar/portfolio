@@ -55,17 +55,18 @@ h2, h3 {
 }
 
 #logo {
+   
     width: 250px;
     height: 90px;
-    background: linear-gradient(rgb(70, 69, 69), rgb(43, 255, 0));
+    background:linear-gradient(rgb(70, 69, 69), rgb(43, 255, 0));
     float: left;
-    font-family: Impact, Charcoal, sans-serif;
+    font-family: 'Lobster', cursive;
     text-align: center;
     line-height: 90px;
     color: rgb(87, 85, 85);
     font-weight: 700;
     font-size: 30px;
-    text-decoration: none;
+    text-decoration: none; 
 }
 
 nav {
@@ -136,7 +137,10 @@ h3, .sidebar, h2 {
   width: 62px;
   height: 62px;
   margin-top:8px;
+  float: left;
 }
+.social :nth-child(2)
+{float: left;}
 
 #social1 {
     width: 62px;
@@ -213,4 +217,36 @@ input[type=submit] {
     font-size:  18px;
     padding: 10px 30px;
     cursor: pointer;
+}
+
+/* @media query 980px, 768px, 640px */
+
+@media  screen and (max-width: 768px) /*and (max-width:980px)*/
+{
+/* no needed modifications */
+}
+@media  screen and (max-width: 640px) /*and (max-width:768px)*/
+{
+.masterheader{ width: 100%;}
+.sidebar {float: left;
+    max-width: 650px;
+    text-align: center;
+    }
+.social {float: none;}     
+.container { text-align: center;}
+
+}
+@media  screen and (max-width: 640px) 
+{
+    .masterheader{ width: 100%;}
+    #logo {width:100%;}
+    .sidebar {float: left;
+        max-width: 650px;
+        text-align: center;
+        }
+    .social {float: none;}     
+    .container { text-align: center;}
+    nav {width: 100%;
+    padding: 0;}
+    nav :first-child {padding-left: 30px;}
 }
